@@ -1,0 +1,107 @@
+/* ListTareas.module.css */
+.containerPrincipalListTareas {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 700px;
+    height: 75vh;
+    overflow-y: auto;
+    background-color: #121212;
+    color: #E0E0E0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Título y botón */
+.containerTitleAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; /* Permite que se acomoden verticalmente en móviles */
+    gap: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388E3C;
+    transition: background-color 0.3s ease;
+}
+
+/* Lista de tareas */
+.containerList {
+    background-color: #1E1E1E;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Media Queries Responsivas */
+@media (max-width: 900px) {
+    .containerPrincipalListTareas {
+        width: 80%;
+        height: 70vh;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerPrincipalListTareas {
+        width: 90%;
+        height: 65vh;
+        padding: 1.2rem;
+    }
+
+    .containerTitleAndButton {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .containerList {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .containerPrincipalListTareas {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+}
