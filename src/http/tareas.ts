@@ -4,7 +4,7 @@ import axios from "axios";
 import { ITarea } from "../types/tareas";
 
 // código que usa Axios para hacer peticiones HTTP a un backend en http://localhost:3000/tareas.
-const API_URL = "http://localhost:3000/tareas";
+const API_URL = "https://react-zustand-jsonserver-todoapp-back.onrender.com/tareas";
 
 //Este código define cuatro funciones para interactuar con una API REST que maneja tareas (tareas). Se usa la librería Axios para hacer peticiones HTTP (GET, POST, PUT, DELETE) al backend.
 export const getAllTareas = async () => {
