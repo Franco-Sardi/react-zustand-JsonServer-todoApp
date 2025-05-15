@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { tareaStore } from "../../../store/tareaStore";
 import styles from "./ListTareas.module.css";
-import { getAllTareas } from "../../../http/tareas";
 import { CardList } from "../CardList/CardList";
 import { Modal } from "../Modal/Modal";
 import { ITarea } from "../../../types/tareas";
